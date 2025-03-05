@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -10,7 +8,6 @@ body {
   background-size: cover;
   color: #fff;
   line-height: 1.6;
-  max-width: 100%;
 }
 
 html {
@@ -22,7 +19,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 35px;
-  border-bottom: 6px solid #ce612e;
+  border-bottom: 6px solid #252525;
   background-image: linear-gradient(to bottom, #007e6d, #00574b, #003d35);
 }
 
@@ -31,14 +28,17 @@ h1 {
   font-size: 45px;
 }
 
-li {
-  font-weight: bolder;
-  padding: 2px;
+#nav_list {
   list-style: none;
+  font-size: 17px;
 }
 
 .nav_link {
   color: #fff;
+  font-weight: bolder;
+  padding: 2px;
+  list-style: none;
+  text-decoration: none;
 }
 
 #AboutMe {
@@ -53,6 +53,8 @@ h2 {
   font-size: 30px;
   text-align: center;
   padding: 30px 0;
+  text-decoration: underline;
+  text-decoration-color: #252525;
 }
 
 .aboutContainer {
@@ -60,12 +62,13 @@ h2 {
   padding: 0 5%;
 }
 
-img {
-  display: flex;
-  max-width: 100%;
+.aboutContainer img {
+  background-color: #000000;
+  border-radius: 50%;
+  border: 10px solid #002c20;
 }
 
-p {
+.aboutContainer p {
   margin-left: 20%;
   margin-top: 10%;
 }
@@ -78,18 +81,28 @@ p {
     #003d35,
     #002e28
   );
-  padding: 50px;
+  padding: 70px 50px;
   margin-left: 15%;
   border-radius: 8px;
   margin-bottom: 50px;
 }
 
+#Skills h2 {
+  padding: 0;
+}
+
 #skillsList {
-  padding: 40px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 30px;
+  list-style: none;
 }
 
 .mySkills {
-  list-style: circle;
+  font-weight: bolder;
+  list-style: none;
   padding: 0 30px;
 }
 
@@ -105,5 +118,82 @@ p {
   );
   padding: 50px;
   border-radius: 8px;
-  margin-bottom: 50px;
+}
+
+.tableContent {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  padding-bottom: 70px;
+}
+
+.tableContent th,
+.tableContent td {
+  border: 2px solid #252525;
+  padding: 12px;
+}
+
+.tableContent th {
+  background-color: #252525;
+  text-align: center;
+}
+
+.tableContent td {
+  background-color: #000000;
+}
+
+.tableContent img {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin: auto;
+}
+
+#Contact {
+  background-image: linear-gradient(to top, #007e6d, #00574b, #003d35, #002e28);
+  padding: 50px;
+  border-radius: 8px;
+  border-top: 6px solid #000000;
+}
+
+#Contact h2 {
+  text-align: left;
+}
+
+label {
+  font-weight: bolder;
+}
+
+input::placeholder {
+  color: #c7c7c7;
+  text-align: left;
+}
+
+#userInformation {
+  padding-bottom: 10px;
+}
+
+label[for="email"] {
+  padding-left: 20px;
+}
+
+#messageConatiner {
+  padding-top: 50px;
+  border-top: 1px solid #000000;
+}
+
+#message {
+  padding-top: 25px;
+}
+
+#submit {
+  background-color: #000000;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
 }
