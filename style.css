@@ -28,7 +28,7 @@ h1 {
   font-size: 45px;
 }
 
-#nav_list {
+.nav_list {
   list-style: none;
   font-size: 17px;
 }
@@ -59,7 +59,9 @@ h2 {
 
 .aboutContainer {
   display: flex;
-  padding: 0 5%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .aboutContainer img {
@@ -70,7 +72,6 @@ h2 {
 
 .aboutContainer p {
   margin-left: 20%;
-  margin-top: 10%;
 }
 
 #Skills {
@@ -122,6 +123,7 @@ h2 {
 
 .tableContent {
   width: 100%;
+  max-width: 100%;
   text-align: left;
   margin-top: 20px;
   padding-bottom: 70px;
@@ -136,6 +138,7 @@ h2 {
 .tableContent th {
   background-color: #252525;
   text-align: center;
+  color: #fff;
 }
 
 .tableContent td {
@@ -144,9 +147,9 @@ h2 {
 
 .tableContent img {
   display: block;
-  width: 350px;
-  height: auto;
   margin: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 #Contact {
@@ -173,17 +176,23 @@ input::placeholder {
   padding-bottom: 10px;
 }
 
+#name,
+#email {
+  border-radius: 5px;
+}
+
 label[for="email"] {
   padding-left: 20px;
 }
 
-#messageConatiner {
+#messageContainer {
   padding-top: 50px;
   border-top: 1px solid #000000;
 }
 
 #message {
   padding-top: 25px;
+  border-radius: 5px;
 }
 
 #submit {
